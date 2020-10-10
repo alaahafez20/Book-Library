@@ -77,10 +77,13 @@ addDone.addEventListener('click', function () {
             }
         }
     }
-    data.unshift(newBook);
-    localStorage.setItem('BooksAddedByme', JSON.stringify(data));
-    show();
-    forForm.style.display = 'none';
+    if(formInput.value.length > 0 && formInput2.value.length > 0){
+        data.unshift(newBook);
+        localStorage.setItem('BooksAddedByme', JSON.stringify(data));
+        show();
+        forForm.style.display = 'none';
+    }
+
 })
 
 
