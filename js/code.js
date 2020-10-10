@@ -15,7 +15,6 @@ http.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=java&fbclid=IwAR
 http.onreadystatechange = function () {
     if (http.readyState == 4 && http.status == 200) {
         data = JSON.parse(http.response).items;
-        console.log(data);
         if (localStorage.getItem('BooksAddedByme') == null) {
             data = JSON.parse(http.response).items;
         }
@@ -78,7 +77,6 @@ addDone.addEventListener('click', function () {
             }
         }
     }
-    console.log(newBook.volumeInfo.imageLinks.smallThumbnail)
     data.unshift(newBook);
     localStorage.setItem('BooksAddedByme', JSON.stringify(data));
     show();
