@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand">Book Library</a>
+            <form class="form-inline">
+                <input id="searchBtn" class="form-control mr-sm-2" type="search" placeholder="Search a Book"
+                    aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div class="outest">
+            <div class="forAddButton">
+                <button id="addBtn" type="button" class="btn btn-info">Add new book</button>
+            </div>
+            <div id="forForm">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Book Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Book Author</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput3">Book Image Link</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput3" >
+                    </div>
+                    
+                    <button id="addDone" type="button" class="btn btn-info mb-2">Add</button>
+                </form>
+
+            </div>
+            <div class="outer" id="myDiv">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/code.js"></script>
+
+</body>
+
+</html>
